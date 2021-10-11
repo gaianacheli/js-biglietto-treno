@@ -21,4 +21,7 @@ if (numberAge < 18) {
 }else if (numberAge > 65) {
    prezzoBiglietto = prezzoBiglietto * 0.6
 }
-console.log ('Il prezzo del biglietto è ' + prezzoBiglietto + ' €')
+console.log('Il prezzo del biglietto è ' + (Math.round(prezzoBiglietto * 100) / 100) + ' €')
+
+
+document.getElementById ('prezzoBiglietto').innerHTML= 'Il prezzo del biglietto è ' + (Math.round(prezzoBiglietto * 100) / 100) + ' €'
